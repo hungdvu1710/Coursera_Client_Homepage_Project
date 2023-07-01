@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   color: white;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 body {
@@ -81,14 +82,23 @@ article {
 
 #services article {
   max-width: 30%;
-  height: 50vh;
-  background-color: #178556;
+  height: 70vh;
+  background-color: #D0604C;
+  text-align: center;
+}
+
+#services img {
+  width: 90%;
+  margin: 1rem auto;
+  display: block;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 footer {
   display: flex;
   max-width: 90vw;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 footer img {
@@ -97,4 +107,9 @@ footer img {
 
 footer div {
   flex: 1;
+}
+
+footer p {
+  color: #9E3323;
+  text-decoration: overline;
 }

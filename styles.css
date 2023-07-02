@@ -81,6 +81,11 @@ article {
   padding: 1rem;
 }
 
+#promotion article:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.5s;
+}
+
 #services article {
   max-width: 30%;
   background-color: #D0604C;
@@ -97,6 +102,11 @@ article {
   overflow-clip-margin: content-box;
   overflow: clip;
   border-radius: 1rem;
+}
+
+#services img:hover {
+  transform: scale(1.08, 1.08);
+  transition: 0.5s;
 }
 
 footer {

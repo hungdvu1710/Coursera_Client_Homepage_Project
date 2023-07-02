@@ -59,6 +59,7 @@ section {
   max-width: 90vw;
   margin: 1.5rem auto;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 article {
@@ -73,7 +74,7 @@ article {
 
 #promotion article {
   background-image: url("/artworks/wepik-export-20230630211941Ari6.png");
-  background-color: #F46F6F;
+  background-color: #FF7F6B;
   max-height: 100%;
   background-size: 100%;
   border-radius: 2rem;
@@ -82,9 +83,11 @@ article {
 
 #services article {
   max-width: 30%;
-  height: 70vh;
   background-color: #D0604C;
   text-align: center;
+  min-width: 350px;
+  min-height: fit-content;
+  margin: 1rem 0;
 }
 
 #services img {
@@ -93,6 +96,7 @@ article {
   display: block;
   overflow-clip-margin: content-box;
   overflow: clip;
+  border-radius: 1rem;
 }
 
 footer {
@@ -112,4 +116,30 @@ footer div {
 footer p {
   color: #9E3323;
   text-decoration: overline;
+}
+
+/* #e1bbc8 */
+
+@media screen and (max-width: 1273px) {
+  #services article {
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  #promotion article {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #services article {
+    min-width: 80vw;
+    max-width: 100%;
+  }
+
+  nav img, ul, li {
+    display: block !important;
+    margin: auto !important;
+  }
 }
